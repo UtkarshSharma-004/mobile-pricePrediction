@@ -21,7 +21,7 @@ st.sidebar.header("Enter Mobile Specifications")
 # Categorical Inputs
 brand = st.sidebar.selectbox(
     "Brand",
-    ["Samsung", "Apple", "Xiaomi", "Realme", "OnePlus"]
+    ["Samsung", "Apple", "Xiaomi", "Realme", "Oneplus","Motorola"]
 )
 
 processor_brand = st.sidebar.selectbox(
@@ -88,3 +88,4 @@ if st.button("Predict Price 💰"):
 
 
     st.success(f"💰 Predicted Price: ₹ {predicted_price:,.2f}")
+
