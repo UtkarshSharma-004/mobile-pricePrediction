@@ -26,7 +26,7 @@ brand = st.sidebar.selectbox(
 
 processor_brand = st.sidebar.selectbox(
     "Processor Brand",
-    ["Snapdragon", "Mediatek", "Exynos", "Bionic"]
+    ["Snapdragon", "Dimensity", "Exynos", "Bionic"]
 )
 
 os = st.sidebar.selectbox(
@@ -85,5 +85,6 @@ if st.button("Predict Price 💰"):
 
     # Convert Back from log1p
     predicted_price = np.expm1(log_price)
+
 
     st.success(f"💰 Predicted Price: ₹ {predicted_price:,.2f}")
